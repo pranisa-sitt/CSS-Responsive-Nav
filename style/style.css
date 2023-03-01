@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../image/marek-piwnicki-hqX_3Q7deCE-unsplash.jpg);
+}
+
+.nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  background-color: rgba(95, 97, 99, 0.348);
+  position: relative;
+}
+
+a {
+  padding: 30px 20px 30px 20px;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 18px;
+  color: rgb(7, 7, 30);
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  background: rgb(243, 240, 240, 0.5);
+}
+
+.icon {
+  visibility: hidden;
+  position: absolute;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.txt-1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  color: rgb(7, 7, 30);
+  margin-bottom: 20px;
+}
+
+.txt-2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 90px;
+  margin: 0;
+  padding: 0;
+  color: rgb(7, 7, 30);
+}
+
+@media screen and (max-width: 600px) {
+  a {
+    visibility: hidden;
+  }
+
+  .icon {
+    visibility: visible;
+  }
+}
