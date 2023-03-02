@@ -23,8 +23,7 @@ a:link, a:visited {
 }
 
 a:hover {
-  background: rgb(243, 240, 240, 0.5);
-  
+  background: rgb(243, 240, 240, 0.8);
 }
 
 .icon {
@@ -71,10 +70,9 @@ main {
 @media screen and (max-width: 600px) {
   .nav.responsive {
     display: grid;
-    transition: 3s;
 }
 
-  .nav.responsive a {
+  .nav.responsive a:not(:first-child, :last-child) {
     visibility: visible;
   }
 }
