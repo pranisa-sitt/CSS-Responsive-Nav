@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <script src="https://kit.fontawesome.com/7cb68ad88d.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/reset.css">
   <link rel="stylesheet" href="style/style.css">
@@ -18,15 +18,27 @@
   <nav class="nav" id="nav-bar">
     <a href="#">HOME</a>
     <a href="#">DESTINATIONS</a>
-    <a href="#">PRICE</a>
     <a href="#">ABOUT</a>
     <a href="#">CONTACT</a>
-    <a href="#" class="icon"><i class="fa-solid fa-bars"></i></a>
+    <a href="#" class="icon" onclick="menuBar()"><i class="fa-solid fa-bars fa-2xl"></i></a>
   </nav>
-  <main>
+  <main id="main">
   <p class="txt-1">Lets</p>
   <p class="txt-2">ROAM</p>
 </main>
+
+<script>
+function menuBar() {
+  let menu = document.getElementById("nav-bar", "main");
+  if (menu.className === "nav") {
+    menu.className += " responsive";
+  } else {
+    menu.className = "nav";
+  }
+}
+</script>
+
+
 </body>
 
 </html>

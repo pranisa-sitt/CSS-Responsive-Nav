@@ -5,16 +5,14 @@ body {
 }
 
 .nav {
-  height: 80px;
-  display: flex;
-  align-items: center;
-  padding-left: 30px;
+  overflow:hidden;
   background-color: rgba(95, 97, 99, 0.348);
-  position: relative;
 }
 
 a {
-  padding: 30px 20px 30px 20px;
+  display: block;
+  float: left;
+  padding: 15px 20px;
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 18px;
   color: rgb(7, 7, 30);
@@ -57,11 +55,32 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-  a {
-    visibility: hidden;
+  .nav a:not(:first-child, :last-child) {
+    visibility:hidden;}
+  
+    .icon {
+      visibility: visible;
+      right: 10px;
+    }
+  .nav {
+    background-color: transparent;
+  }
   }
 
-  .icon {
+@media screen and (max-width: 600px) {
+  .nav.responsive {
+    display: grid;
+    /*flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: flex-end;}*/
+}
+
+  .nav.responsive a {
     visibility: visible;
+
   }
+
+  
+  
 }
